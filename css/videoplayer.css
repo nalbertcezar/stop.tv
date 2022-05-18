@@ -1,0 +1,17 @@
+:root{
+    --primarycolor: #ff7c9b;
+    --secondarycolor: #ff005e;
+    --terciarycolor: #ffb6c1
+}
+
+.video-box{
+    width: 80%;
+    margin: 20px auto;
+    height: 600px;
+}
+
+.titulo h3{
+    font-size: 30px;
+    color: var(--secondarycolor);
+    margin: 20px;
+}

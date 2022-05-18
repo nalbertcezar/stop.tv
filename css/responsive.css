@@ -1,0 +1,163 @@
+:root{
+    --primarycolor: #ff7c9b;
+    --secondarycolor: #ff005e;
+    --terciarycolor: #ffb6c1
+}
+
+@media screen and (max-width: 700px){
+
+    /*header*/
+    header .container{
+        display: flex;
+        flex-direction: inline-block;
+        justify-content: space-evenly;
+
+        padding-top: 10px;
+    }
+
+    header nav{
+        margin: 10px 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav a{
+        margin: 0;
+        padding: 5px 5px;
+    }
+    
+    .logo-container{
+        display: flex;
+        flex-direction: column;
+        margin: 0 10px;
+    }
+
+    .logo-container .logo{
+        width: 140px;
+    }
+
+    .logo-container .titulo{
+        font-size: 50px
+    }
+
+    .search-box{
+        margin: 10px 0;
+        padding: 10px 20px;
+        justify-content: center;
+    }
+
+    .search{
+        width: 400px;
+    }
+    
+    /*main*/    
+    .nav-tabs{
+        width: auto;
+        position: static;
+        height: 100%;
+    }
+
+    .nav-tabs ul{
+        display: block;   
+    }
+
+    .nav-tabs label{
+        width: auto;
+        padding: 17px 40px;
+        border-radius: 5px 5px 0 0;
+        cursor:auto;
+        margin-top: 20px;
+    }
+
+    .rd-tabs:checked ~ label{
+        background-color: var(--secondarycolor); 
+        color: white;      
+    }
+
+    .content{
+        display: block;
+        position: static;
+        height: 100%;
+        border: none;
+    }
+
+    .principal-container .box{
+        width: auto;
+        background: linear-gradient(rgba(255,124,155,.30), rgba(0,0,0,.30)), url(../img/demon_slayer_filme_poster.png);
+        background-size: 100% 100%;
+    }
+
+    .poster{
+        display: none;
+    }
+
+    .sinopse-box{
+        overflow: auto;
+        text-overflow: ellipsis;
+        height: 250px;  
+    }
+
+    .sinopse-box::-webkit-scrollbar{
+        display: none;
+    }
+
+    .principal-sinopse{
+        margin-bottom: 0;
+    }
+
+    .botoes{
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .botao{
+        margin-top: 10px;
+        width: 50%;
+        background-color: var(--secondarycolor);
+    }
+
+    .lista-tab-content{
+        display: inline-block;
+        height: 1040px;
+    }
+
+    .film-content{
+        display: inline-block;
+        width: 48%;
+        height: 490px;
+        margin-top: 20px;
+    }
+
+    .poster-list{
+      margin: 0 0 0 10px;
+      width: 90%;
+    }
+
+    /*footer*/
+    
+    .footer-container{
+        margin-top: 20px;
+    }
+
+    footer .opcoes a{
+        margin: 5px 7px;
+    }
+
+    /*video player*/
+
+    .video-container{
+        width: auto;
+        height: 200px;
+    }
+
+    .titulo-video{
+        font-size: 30px;
+        margin: 10px;
+    }
+
+
+
+}
+
+

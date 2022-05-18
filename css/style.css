@@ -1,0 +1,337 @@
+:root{
+    --primarycolor: #ff7c9b;
+    --secondarycolor: #ff005e;
+    --terciarycolor: #ffb6c1
+}
+
+body{
+    background: linear-gradient(rgba(255,124,155,.10), #ff7c9b)
+}
+/*Header*/
+header {
+    background-color:  var(--secondarycolor);
+    color: white;
+    box-shadow: black 2px 2px 8px 0;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav{
+    padding: 10px 0;
+    margin-right: 80px;    
+    
+    border: solid 2px white;
+    border-radius: 10px;
+    box-shadow: white 4px 5px;
+}
+
+header nav a{
+    font-size: 20px;
+    font-family: 'Maven Pro', sans-serif;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+header nav a:hover{
+    text-decoration: underline;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin: 20px 50px;
+}
+
+.logo-container .logo {
+    width: 150px;
+}
+
+.logo-container .titulo{
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'Maven Pro', sans-serif;
+    color: white;
+}
+
+.search-box{
+    display: flex;
+    justify-content: flex-end;
+    
+    padding: 0 40px 40px 40px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.search {
+    padding: 5px 20px;
+    margin-right: 10px;
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    
+    background-color: transparent;
+    border: 2px white solid;
+
+    transition: all 400ms;
+}
+
+.search::placeholder{
+    color: white;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.search:focus{
+    width: 400px;
+    outline: none;
+}
+
+.lupa{
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/*Main*/
+.nav-tabs{
+    width: 1200px;
+    height: 750px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.nav-tabs ul{
+    display: flex;
+    justify-content: center;
+}
+
+.rd-tabs{
+    display: none;
+}
+
+.nav-tabs label{
+    display: block;
+    width: 600px;
+    padding: 17px 0;
+    text-align: center;
+
+    background-color: var(--secondarycolor); 
+    color: white;
+    border-radius: 5px 5px 0 0;
+    font-family: 'Maven Pro', sans-serif;      
+    font-size: 20px; 
+    cursor: pointer;
+}
+
+.rd-tabs:checked ~ label{
+    background-color: white;
+    color: var(--secondarycolor);
+}
+
+.content{
+    border-top: 4px solid var(--secondarycolor);
+    border: 1px solid var(--secondarycolor);
+    border-radius: 0 0 5px 5px;
+    background: linear-gradient(#ff7c9b 80%, #ffb6c1);
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 650px;
+}
+
+.rd-tabs:checked ~ .content{
+    display: block;
+}
+
+.content .principal-container{
+    display: flex;
+}
+
+.principal-container .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 50%;
+    height: 650px;
+    background: linear-gradient(to right,#ff7c9b 80%, #ffb6c1);
+}
+
+.principal-titulo{
+    font-size: 80px;
+    margin: 0 20px;
+    font-family: 'Macondo', cursive;
+    color: white;
+}
+
+.principal-sinopse{
+    font-size: 25px;
+    margin: 30px 20px 40px 20px;
+    width: 80%;
+
+    color: white;
+}
+
+.botao{
+    background-color: #ff5f77;
+    border: solid 2px white;
+    border-radius: 5px;
+    color: white;    
+    font-size: 15px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+    
+    margin: 20px 0 0 20px;
+    padding: 10px 20px;
+
+    transition: all 800ms ease;
+}
+
+.botao:hover{
+    transform: scale(1.03);
+    background-color: var(--secondarycolor);
+    border: solid 2px white;
+    color: white;
+}
+
+.poster{
+    width: 50%;
+    height: 650px;  
+}
+
+.demon-slayer-poster{
+    width: 100%;
+    height: 100%;
+}
+
+.lista-tab-content{
+    height: 650px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: url(../img/flor-de-cerejeira.png);
+    background-size: contain;
+
+}
+
+.film-content{
+    width: 22%;
+    justify-content: center;
+    background-color: var(--secondarycolor);
+    border-radius: 10px;
+    cursor: pointer;
+    border: solid 2px white;
+
+    transition: all 500ms ease;
+}
+
+.film-content:hover{
+    transform: scale(1.01);
+    box-shadow: black 5px 4px 10px 0px;
+}
+
+.poster-list{
+    width: 200px;
+    height: 300px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    padding-top: 15px;
+}
+
+.sinopse-list{
+    height: 60px;
+    width: 80%;   
+    overflow: auto;
+    padding: 5px 5px;
+    margin: 0 auto;
+    color: white;
+    font-family: 'Macondo', cursive;
+    font-size: 18px;
+}
+
+.film-content-button{
+    background-color: #ff5f77;
+    border: solid 2px white;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin:10px;
+    cursor: pointer;
+}
+
+.sinopse-list::-webkit-scrollbar{
+    display: none;
+}
+
+/*footer*/
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+}
+
+footer .logo-footer{
+    width: 150px;
+}
+
+footer .icons{
+    width: 30px;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+
+footer .opcoes{
+    color: white;
+}
+
+footer .opcoes a{
+    margin: 10px 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+
+.opcoes a:hover{
+    text-decoration: underline;
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*Video pages*/
+
+.video-container{
+    width: 80%;
+    height: 600px;
+    margin: 40px auto;
+}
+
+.titulo-video{
+    font-size: 40px;
+    font-family: 'Maven Pro', sans-serif;
+    margin-left: 40px;
+    color: var(--secondarycolor);
+}
+
+
+
+
+
