@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Demon Slayer: Mugen Train - Stop.TV</title>
+        <title>Home - Stop.TV</title>
 
         <link rel="stylesheet" href="../css/reset.css">
         <link rel="stylesheet" href="../css/style.css">
@@ -12,9 +12,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Maven+Pro&display=swap" rel="stylesheet">
     </head>
 
@@ -29,7 +26,7 @@
                     <a href="../index.html">Início</a>
                     <a>Login</a>
                     <a>Minhas Lista</a>
-                    <a href="pages/planos.html">Assinatura</a> 
+                    <a href="planos.html">Assinatura</a> 
                     <a>Preferências</a>                                       
                 </nav>
             </div>
@@ -40,9 +37,23 @@
         </header>
 
         <main>
-            <h2 class="titulo-video">Demon Slayer: Mugen Train</h2>
-            <div class="video-container">
-                <iframe src="https://drive.google.com/file/d/1ticwWBL1LT5L50UKTpRS85fZ4iC1a5y3/preview" width="100%" height="100%" allowfullscreen allow="autoplay"></iframe>
+            <div class="login-screen-container">
+                <div class="template-side-container">
+                    <h3>Bem-Vindo de volta!</h3>
+                    <p>Você pode logar para acessar sua conta ou criar uma nova conta.</p>
+                </div>
+                <div class="login-side-container">
+                    <div class="login-info-container">
+                        <h3>Login</h3>
+                        <label for="email">Email ou Nome de Usuário</label>
+                        <input type="text" class="email-box" id="email" placeholder="Email ou Nome de Usuário">
+                        <label for="password">Senha</label>
+                        <input type="password" class="password-box" id="password" placeholder="Senha">
+                        <input type="submit" value="Entrar" class="login-button">
+                        <span>Esqueceu a senha?</span>
+                        <span>Não possui conta? <a>Crie a sua!</a></span>
+                    </div>
+                </div>
             </div>    
         </main>
 

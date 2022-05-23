@@ -83,7 +83,7 @@
 
     .principal-container .box{
         width: auto;
-        background: linear-gradient(rgba(255,124,155,.30), rgba(0,0,0,.30)), url(../img/demon_slayer_filme_poster.png);
+        background: linear-gradient(rgba(0,0,0,.70), rgba(0,0,0,.30)), url(../img/demon_slayer_filme_poster_main.png);
         background-size: 100% 100%;
     }
 
@@ -94,7 +94,8 @@
     .sinopse-box{
         overflow: auto;
         text-overflow: ellipsis;
-        height: 250px;  
+        height: 250px; 
+        width: 70%; 
     }
 
     .sinopse-box::-webkit-scrollbar{
@@ -156,8 +157,26 @@
         margin: 10px;
     }
 
+    /*Login screen*/
 
+    .template-side-container{
+        display: none;
+    }
 
+    .login-side-container{
+        width: 100%;
+    }
+
+    /*planos*/
+
+    .plans-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .plano1-container,.plano2-container{
+        width: 95%;
+    }
 }
 
 

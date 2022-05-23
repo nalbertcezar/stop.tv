@@ -331,6 +331,215 @@ footer .copyright{
     color: var(--secondarycolor);
 }
 
+/*Login Screen*/
+
+.login-screen-container{
+    display: flex;
+    justify-content: center;
+    
+    width: 80%;
+    height: 600px;
+    margin: 50px auto;
+}
+
+.template-side-container{
+    background: linear-gradient(rgba(255,124,155,.10), rgba(255,124,155,.60)) ,url(../img/sakura_template.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+
+    width: 60%;
+}
+
+.template-side-container h3{
+    font-size: 50px;
+    margin: 0 70px 20px 0;
+    font-family: 'Macondo', cursive;
+}
+
+.template-side-container p{
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 20px;
+}
+
+.login-side-container{
+    background-color: white;
+    text-align: center;
+    font-family: 'Maven Pro', sans-serif;
+    border-radius: 0 10px 10px 0;
+
+    width: 40%;
+}
+
+.login-info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10em;
+}
+
+.login-info-container h3, label, input, span{
+    margin-top: 20px;
+}
+
+.login-info-container h3{
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.login-info-container .login-button{
+    width: 50%;
+    background-color: var(--primarycolor);
+    border: none;
+    border-radius: 20px;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 15px;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 200ms ease all;
+}
+
+.login-button:hover{
+    background-color: var(--secondarycolor);
+}
+
+.login-info-container label{
+    display: none;
+}
+
+.login-info-container .email-box, .password-box{
+    padding: 15px;
+    border: 2px solid var(--primarycolor);
+    border-radius: 25px;
+    width: 70%;
+    font-size: 15px;
+}
+
+.email-box:focus, .password-box:focus{
+    outline: none;
+    border: 2px solid var(--secondarycolor);
+}
+
+.login-info-container span:first-of-type{
+    color: rgb(168, 168, 168);
+    cursor: pointer;
+}
+
+.login-info-container span:first-of-type:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+.login-info-container a{
+    color: var(--primarycolor);
+    cursor: pointer;
+}
+
+.login-info-container a:hover{
+    color: var(--secondarycolor);
+}
+
+/*Planos*/
+
+.plans-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.plano1-container, .plano2-container{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 30%; 
+    margin: 50px auto;
+    font-family: 'Maven Pro', sans-serif;
+    background-color: var(--terciarycolor);
+    border-radius: 10px;
+    border: solid var(--primarycolor) 2px; 
+}
+
+.plan1-icon{
+    width: 75px;
+}
+
+.plano-header-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plano-header-container *{
+    margin-top: 20px;
+}
+
+.plano-header-container .img-background{
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.plano-header-container span{
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.plano-header-container h4{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.plano-header-container button{
+    padding: 10px 25px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: var(--primarycolor);
+    transition: 800ms ease all;
+    cursor: pointer;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.plano-header-container button:hover{
+    transform: scale(1.01);
+    background-color: var(--secondarycolor);
+}
+
+.plano-header-container a{
+    color: gray;
+    cursor: pointer;
+}
+
+.plano-header-container a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+.plano1-beneficios-container, .plano2-beneficios-container{
+    margin-bottom: 30px;
+}
+
+.plano1-beneficios-container *, .plano2-beneficios-container *{
+    margin-top: 20px;
+}
+
+.plano1-beneficios-container ul i, .plano2-beneficios-container ul i{
+    color: var(--secondarycolor);
+    margin-right: 10px;
+}
+
+.plano1-beneficios-container ul li:last-child{   
+    color: gray;
+}
 
 
 
